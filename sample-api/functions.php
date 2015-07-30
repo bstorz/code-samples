@@ -8,6 +8,9 @@
 //instance of the given process and sets up
 //pipes to it.
 ini_set("memory_limit","512M");
+
+/* In the interest of full disclosure, runWithInput is a modified piece
+ * of code that is available under open-source on the php.net website.  */
 function runWithInput($processToRun,$stdin) {
     //Setup file descriptors
     $descriptors = array(

@@ -1,5 +1,5 @@
 <?php
-mysql_connect("localhost", "utelevators", "Utelevators01.") or die(mysql_error());
+mysql_connect("localhost", "utelevators", "utelevators") or die(mysql_error());
 mysql_select_db("utelevators") or die(mysql_error());
 
 $results = mysql_query("SELECT * FROM dorms") or die(mysql_error());

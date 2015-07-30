@@ -30,9 +30,7 @@
 	     ?>
 	     <div id="banner-ad">
 			<script type="text/javascript"><!--
-				google_ad_client = "ca-pub-0569546432505936";
 				/* UT Elevators Ad - Banner */
-				google_ad_slot = "0248068760";
 				google_ad_width = 468;
 				google_ad_height = 60;
 				//-->
@@ -46,9 +44,7 @@
          ?>
          <div id="mobile-banner-ad">
 			<script type="text/javascript"><!--
-				google_ad_client = "ca-pub-0569546432505936";
 				/* UT Elevators Ad - Mobile */
-				google_ad_slot = "1717008698";
 				google_ad_width = 320;
 				google_ad_height = 50;
 				//-->
