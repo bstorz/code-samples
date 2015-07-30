@@ -8,7 +8,7 @@ Custom tar (jtar) is another project completed at UT also written in C.  It crea
 #### Java Chatroom
 Java chatroom (jtalk) is a fully functional CLI chatroom server and client that operates over sockets.  The .jar files are compiled versions of the source.
 #### Modal Box
-Modal box is a small jquery-based Modal Box that is (very) rudimentary.  It is for use in incredibly sparse and simple websites, where multiple features simply aren't needed.
+Modal box is a small jquery-based Modal Box that is (very) rudimentary.  It is for use in incredibly sparse and simple websites, where multiple features simply are not needed.
 #### Sample API
 Sample API is a piece of a larger application I wrote that I unfortunately cannot include in whole here.  Sample API is a RESTful PHP API for communicating with a local Python script and a local C program through pipes, accepting input from POST requests, handing it over to the appropriate scripts, and returning the output in JSON.
 #### Temperature Monitor
