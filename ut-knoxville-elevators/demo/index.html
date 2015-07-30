@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>UT Knoxville Elevators</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+	</head>
+	<body>
+		<div id="float"></div>
+		<div id="content">
+			<h1><span class="go-vols">UT Knoxville</span> Elevators</h1>
+			<div id="dorms">
+				<div class="dorm working">
+					<h2>North Carrick</h2>
+					<div class="status">Both Elevators <span>Working</span></div>
+					<div class="length">for 3 weeks and 2 days</div>
+					<a href="#">Change Status</a>
+					
+					<div class="available-statuses">
+						<select>
+							<option class="working">Both Elevators Working</li>
+							<option class="broken">Both Elevators Broken</li>
+							<option class="slow">One Elevator Broken</li>
+							<option class="oneRepairing">One Elevator Being Repaired</li>
+							<option class="bothRepairing">Both Elevators Being Repaired</li>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">Copyright &copy; 2012 <a href="http://www.brandonstorz.com">Brandon Storz</a></div>
+		<script type="text/javascript">
+			$("div.dorm").toggle(function(){
+				$(this).children("div.available-statuses").fadeIn("slow");
+			},function(){
+				$(this).children("div.available-statuses").fadeOut("slow");
+			});
+			$("div.available-statuses select").change(function(){
+				$(this).parent().fadeOut("slow");
+				var newStatus = $(this).find(":selected").attr("class");
+				var oldStatus = ""+$(this).parent().parent().attr('class').split(' ').slice(-1);
+
+				if(newStatus == "working") $(this).parent().siblings("div.status")
+							.html("Both Elevators <span>Working</span>")
+							.children("span")
+								.animate({"color": "green"},1000);
+				else if(newStatus == "broken") $(this).parent().siblings("div.status")
+							.html("Both Elevators <span>Broken</span>")
+							.children("span")
+								.animate({"color": "red"},1000);
+				else if(newStatus == "slow") $(this).parent().siblings("div.status")
+							.html("One Elevator <span>Broken</span>")
+							.children("span")
+								.animate({"color": "#7d8435"},1000);
+				else if(newStatus == "oneRepairing") $(this).parent().siblings("div.status")
+							.html("One Elevator <span>Being Repaired</span>")
+							.children("span")
+								.animate({"color": "#c67c25"},1000);
+				else if(newStatus == "bothRepairing") $(this).parent().siblings("div.status")
+							.html("Both Elevators <span>Being Repaired</span>")
+							.children("span")
+								.animate({"color": "#c67c25"},1000);
+				
+				$(this).parent().siblings("div.length").text("for a couple of seconds now");
+				$(this).parent().parent().switchClass(oldStatus,newStatus,1000);
+			});
+		</script>
+	</body>
+</html>

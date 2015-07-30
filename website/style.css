@@ -1,0 +1,81 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fff url("bg.png") repeat;
+	color: #666;
+	font-family: "Merriweather", "Georgia", serif;
+	
+	margin: 0 auto;
+		margin-top: 30px;
+	width: 800px;
+    font-weight: 300;
+}
+h1{
+    font-family: "Bitter", "Georgia", serif;
+	color: #222;
+	font-size: 42px;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
+h1 a{
+	color: #222;
+}
+em{
+	color: #555;
+	font-weight: bold;
+    font-style:normal;
+    letter-spacing: .1px;
+}
+em:hover {
+    color: #000;
+}
+.qtip{
+    color: #fff;
+}
+.qtip em{
+	color: #fff;
+	font-weight: normal;
+	text-decoration: underline;
+}
+p,li{
+	font-size: 24px;
+	line-height: 2;
+}
+a{
+	color: #666;
+	text-decoration: none;
+}
+a:hover{
+    color: #000;
+}
+div#portfolio{
+	border-top: 10px dashed #666;
+	margin: 100px 0;
+	padding-top: 50px;
+}
+div#portfolio li a,div#portfolio li{
+	color: #333;
+	font-weight:bold;
+}
+p.copyright{
+	font-size: 13px;
+	text-align: center;
+}
+a.backToTop{
+	text-decoration: underline;
+}
+p.contact{
+	margin-top: 40px;
+}
+em.christ{
+    color: #990000;
+}
+a.bigorange em{
+	color: #FF8200;
+}
+p#sdg{
+    font-family: "Pacifico", Georgia, serif;
+    text-align: right;
+}

@@ -1,0 +1,241 @@
+/* General Elements */
+html,body{
+	background: #F0EDE4 url("/img/background.png") repeat;
+	margin: 0;
+	padding: 0;
+	font-family: "Georgia","Palatino","Times New Roman";
+	font-size: 13px;
+	height: 100%;
+	line-height: 1.5;
+}
+h1{
+	font-size: 30px;
+	color: #4c4d4f;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+a{
+	color: #444;
+}
+
+::selection {
+	background: #f77f00;
+	color: #fff;
+}
+::-moz-selection {
+	background: #f77f00;
+	color: #fff;
+}
+
+/* Colored Text */
+.go-vols{
+	color: #f77f00;
+}
+
+/* Center Page Vertically  */
+#float{
+	float: left;
+	height: 50%;
+	margin-bottom: -305px;
+}
+#content{
+	clear: both;
+	height: 450px;
+	position: relative;
+	text-align: center;
+}
+
+/* Info line */
+#infoline{
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+#infoline a{
+	color: #777;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* Format Circles and their Content */
+div#dorms{
+	margin: 0 auto;
+	height: 286px;
+	width: 286px;
+	overflow: auto;
+}
+div.dorm{
+	border: 18px solid;
+	cursor: pointer;
+	height: 250px;
+	width: 250px;
+	text-align: center;
+	-moz-border-radius: 250px;
+	-webkit-border-radius: 250px;
+	-ms-border-radius: 250px;
+	border-radius: 250px;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	float: left;
+	
+	-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+div.dorm h2{
+	font-size: 24px;
+	margin-top: 75px;
+	margin-bottom: 5px;
+}
+div.dorm div.status{
+	font-weight: bold;
+	color: #666;
+}
+div.dorm a{
+	font-size: 14px;
+	display: block;
+	margin-top: 30px;
+}
+
+/* Create Circle Colors */
+div.dorm.working{
+	border-color: green;
+}
+div.dorm.working div.status span{
+	color: green;
+}
+div.dorm.broken,div.dorm.bothRepairing{
+	border-color: darkred;
+}
+div.dorm.broken div.status span,div.dorm.bothReparing div.status span{
+	color: red;
+}
+div.dorm.slow,div.dorm.oneRepairing{
+	border-color: #e4e22b;
+}
+div.dorm.slow div.status span,div.dorm.oneRepairing div.status span{
+	color: #7d8435;
+}
+
+/* Available Statuses */
+.available-statuses{
+	background: #222;
+	display: none;
+	height: 250px;
+	width: 250px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-border-radius: 250px;
+	-moz-border-radius: 250px;
+	-ms-border-radius: 250px;
+	border-radius: 250px;
+}
+.available-statuses h3{
+	color: #fff;
+	font-size: 24px;
+	margin-top: 75px;
+	margin-bottom: 10px;
+}
+.available-statuses select{
+	width: 190px;
+	border: 1px solid #aaa;
+	height: 35px;
+	vertical-align: middle;
+	-moz-border-radius: 8px;
+	padding: 5px;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+/*div.dorm.repairing{
+	border-color: #ff9900;
+}*/
+div.dorm.oneRepairing div.status span,div.dorm.bothRepairing div.status span{
+	color: #c67c25;
+}
+/*ul{
+	list-style-type: none;
+	padding: 0;
+	width: 80%;
+	margin: 40px auto 0 auto;
+	-webkit-border-radius: 20px;
+	overflow: hidden;
+}
+ul li{
+	padding: 7px 0;
+	color: #fff;
+}
+li.working{
+	background-color: green;
+}
+li.broken,li.bothRepairing{
+	background-color: darkred;	
+}
+li.slow,li.oneRepairing{
+	background-color: #e4e22b;
+}*/
+
+/* Refresh Now */
+div#refresh{
+	text-align: center;
+	font-size: 11px;
+	margin-top: 50px;
+}
+/* Footer */	
+div#footer{
+	font-size: 11px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	padding: 0 0 10px 0;
+	text-align: center;
+	width: 100%;
+}
+
+/* FAQ */
+div#faq{
+	width: 500px;
+	margin: 0 auto;
+}
+div#faq dt{
+	color: #444;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: left;
+	margin-top: 30px;
+}
+div#faq dd{
+	text-align: left;
+	margin: 10px 0 0 0;
+}
+div#faq a{
+	display: block;
+	font-size: 15px;
+	background: #ddd;
+	padding: 5px;
+	margin: 30px auto;
+	width: 100px;
+	-webkit-border-radius: 6px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #444;
+}
+
+/* Advertisements */
+#banner-ad{
+	width: 468px;
+	height:60px;
+	margin:10px auto;
+}
+#mobile-banner-ad{
+	height:50px;
+	width:320px;
+	margin:0px auto 10px auto;
+}
